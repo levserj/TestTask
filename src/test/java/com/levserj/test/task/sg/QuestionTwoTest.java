@@ -20,6 +20,8 @@ public class QuestionTwoTest {
 
     @Test
     public void checkMethodFindPalindromeReturnsCorrectInt(){
-        assertThat(questionTwo.nextPalindromeFinder(15), is(51));
+        assertThat(questionTwo.nextPalindromeFinder(10), is(11));
+        assertThat(questionTwo.nextPalindromeFinder(15), is(22));
+        assertThat(questionTwo.nextPalindromeFinder(235), is(242));
     }
 }

@@ -1,9 +1,5 @@
 package com.levserj.test.task.sg;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 /**
  * Created by Serhii Levchynskyi on 13.07.2016.
  *
@@ -13,20 +9,7 @@ import java.io.InputStreamReader;
  */
 public class QuestionTwo {
 
-    public static void main(String[] args) throws IOException {
-
-        /* InputStreamReader is used to collect initial number from user */
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Input start number: ");
-        int inputNumber = Integer.parseInt(br.readLine());
-
-        /* Invocation of the method to find palindrome. */
-        QuestionTwo instance = new QuestionTwo();
-        int palindrome = instance.nextPalindromeFinder(inputNumber);
-        System.out.println("Next smallest palindrome is : " + palindrome);
-    }
-
-    /*
+    /**
      * This method takes int, increments it in a cycle
      * and compares each new string representation of the value
      * with the same reversed string, and returns the value if they are equal.
